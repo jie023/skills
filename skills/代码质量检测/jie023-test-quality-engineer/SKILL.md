@@ -1,6 +1,6 @@
 ---
 name: "jie023-test-quality-engineer"
-description: "Use when coordinating code-level quality testing for completed modules, files, or directories without running API requests."
+description: "Use when coordinating code-level quality testing for completed modules, files, or directories without running API requests, including incremental Markdown report output during inspection."
 ---
 # 代码质量测试工程师
 
@@ -18,11 +18,27 @@ description: "Use when coordinating code-level quality testing for completed mod
 
 1. 确认检查范围：模块路径、文件路径、目录路径或用户描述的范围。
 2. 判断技术栈、框架、构建方式和关注点。
-3. 先调用通用质量 skill，再按语言、框架、模式、构建问题追加专项 skill。
-4. 汇总阻断、高风险、中风险、建议优化和无法确认的风险。
-5. 输出报告时调用 `test-quality-report-template`。
-6. 发现问题后先报告，等待用户确认后再逐项修复。
-7. 如果需要改多个文件，按安全批量修改规则逐项处理。
+3. 确定 Markdown 报告路径：优先使用用户指定路径；否则在检查范围根目录生成 `代码质量检查报告.md`。
+4. 检查开始前创建报告骨架，包含检查范围、检查时间、技术栈、调用 skill、当前结论和问题统计。
+5. 先调用通用质量 skill，再按语言、框架、模式、构建问题追加专项 skill。
+6. 每完成一个检查阶段，立即更新 Markdown 报告，追加已确认问题、证据、风险等级、整改建议和无法确认项。
+7. 汇总阻断、高风险、中风险、建议优化和无法确认的风险，并刷新报告结论。
+8. 输出报告时调用 `test-quality-report-template`。
+9. 发现问题后先报告，等待用户确认后再逐项修复。
+10. 如果需要改多个文件，按安全批量修改规则逐项处理。
+
+## 增量 Markdown 报告规则
+
+- 质量检查必须边检查边输出 Markdown 报告，不等全部检查结束后一次性补写。
+- 报告文件名默认使用 `代码质量检查报告.md`；同名文件已存在时，除非用户明确要求覆盖，否则使用 `代码质量检查报告-YYYYMMDD-HHmm.md`。
+- 创建报告骨架后，每完成一个专项检查就更新一次报告，至少更新以下内容：
+  - 检查进度：已完成、进行中、待检查的专项。
+  - 问题统计：阻断、高风险、中风险、建议优化、无法确认。
+  - 问题明细：文件路径、行号、代码内容或配置项、问题等级、原因、建议。
+  - 未验证项：未执行构建、未跑接口、未做动态安全测试、依赖扫描缺失等。
+- 如果当前平台没有文件写入权限，必须在对话中输出同结构 Markdown，并说明无法落盘的原因。
+- 增量报告只记录已确认事实；疑似问题必须单独放入“无法确认风险”，不得当作确定缺陷。
+- 报告中的密码、密钥、token、证书口令必须脱敏，仅保留定位所需的文件路径、行号和字段名。
 
 ## 默认调用组合
 
@@ -57,6 +73,7 @@ description: "Use when coordinating code-level quality testing for completed mod
 - 不跑 API 请求。
 - 不照搬强制调用、自动修复、hooks、后台观察逻辑。
 - 输出必须包含文件路径、行号、问题等级、原因、建议。
+- 检查过程中必须同步维护 Markdown 报告，最终回答必须给出报告路径。
 - 报告输出遵循 `test-quality-report-template`。
 - 多文件修改必须按安全批量修改规则执行。
 - 中文路径和中文内容必须保持 UTF-8。
