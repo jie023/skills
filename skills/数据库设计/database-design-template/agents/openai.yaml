@@ -1,0 +1,6 @@
+interface:
+  display_name: "Database Design Template"
+  short_description: "Database design document templates and schema structure guidance."
+  default_prompt: "Use $database-design-template to document this database schema."
+policy:
+  allow_implicit_invocation: true

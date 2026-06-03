@@ -1,0 +1,6 @@
+interface:
+  display_name: "API Performance Test"
+  short_description: "API performance, load, concurrency, and regression testing."
+  default_prompt: "Use $test-api-performance to design a performance test for this API."
+policy:
+  allow_implicit_invocation: true

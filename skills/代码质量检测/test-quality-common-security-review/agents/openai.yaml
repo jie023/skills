@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Common Security Review"
+  short_description: "Code-level security review checklist."
+  default_prompt: "Use $test-quality-common-security-review to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

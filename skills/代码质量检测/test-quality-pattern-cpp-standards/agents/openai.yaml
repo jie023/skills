@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Pattern CPP Standards"
+  short_description: "C++ standards pattern review."
+  default_prompt: "Use $test-quality-pattern-cpp-standards to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

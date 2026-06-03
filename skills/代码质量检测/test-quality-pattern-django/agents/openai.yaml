@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Pattern Django"
+  short_description: "Django pattern review."
+  default_prompt: "Use $test-quality-pattern-django to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

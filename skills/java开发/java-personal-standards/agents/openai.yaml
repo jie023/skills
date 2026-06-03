@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java Personal Standards"
+  short_description: "Personal Java comments, P3C style, utility reuse, and verification rules."
+  default_prompt: "Use $java-personal-standards to write or review this Java code with the user's personal Java rules."
+policy:
+  allow_implicit_invocation: true

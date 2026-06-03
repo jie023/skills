@@ -1,0 +1,6 @@
+interface:
+  display_name: "P3C Coding Style"
+  short_description: "Naming, formatting, constants, and comment rules for P3C Java code."
+  default_prompt: "Use $p3c-coding-style to align this Java code with P3C style rules."
+policy:
+  allow_implicit_invocation: true

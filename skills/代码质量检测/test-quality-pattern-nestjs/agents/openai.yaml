@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Pattern Nestjs"
+  short_description: "NestJS pattern review."
+  default_prompt: "Use $test-quality-pattern-nestjs to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

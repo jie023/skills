@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java Common Standards"
+  short_description: "Shared Java standards for Hutool, Lombok, and common conventions."
+  default_prompt: "Use $java-common-standards to align this Java code with common project rules."
+policy:
+  allow_implicit_invocation: true

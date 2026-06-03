@@ -1,0 +1,6 @@
+interface:
+  display_name: "Git Commit Helper"
+  short_description: "Explicit-request Git operations and conventional commit messages."
+  default_prompt: "Use $git-commit-helper to inspect, stage, or commit these changes using the required Git rules."
+policy:
+  allow_implicit_invocation: true

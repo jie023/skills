@@ -1,0 +1,6 @@
+interface:
+  display_name: "Jie023 Database Designer"
+  short_description: "MySQL schema design, DDL writing, and normalization guidance."
+  default_prompt: "Use $jie023-database-designer to design tables for this feature."
+policy:
+  allow_implicit_invocation: true

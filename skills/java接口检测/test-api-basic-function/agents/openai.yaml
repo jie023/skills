@@ -1,0 +1,6 @@
+interface:
+  display_name: "API Basic Function Test"
+  short_description: "API functional validation with positive, negative, and boundary cases."
+  default_prompt: "Use $test-api-basic-function to validate this API endpoint."
+policy:
+  allow_implicit_invocation: true

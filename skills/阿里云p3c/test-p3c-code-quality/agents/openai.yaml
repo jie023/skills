@@ -1,0 +1,6 @@
+interface:
+  display_name: "P3C Code Quality Test"
+  short_description: "Comprehensive Java code quality checks against Alibaba P3C."
+  default_prompt: "Use $test-p3c-code-quality to inspect this Java project for P3C issues."
+policy:
+  allow_implicit_invocation: true

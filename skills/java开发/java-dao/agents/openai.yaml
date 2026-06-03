@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java DAO"
+  short_description: "DAO and MyBatis mapper standards for CRUD and data access."
+  default_prompt: "Use $java-dao to generate DAO and MyBatis mapper code for this table."
+policy:
+  allow_implicit_invocation: true

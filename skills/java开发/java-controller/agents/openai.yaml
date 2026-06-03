@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java Controller"
+  short_description: "Controller standards for REST endpoints, mappings, validation, and responses."
+  default_prompt: "Use $java-controller to generate a Spring Controller for this API."
+policy:
+  allow_implicit_invocation: true

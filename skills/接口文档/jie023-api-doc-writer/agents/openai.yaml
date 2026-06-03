@@ -1,0 +1,6 @@
+interface:
+  display_name: "Jie023 API Doc Writer"
+  short_description: "API documentation generation from Java Controller code."
+  default_prompt: "Use $jie023-api-doc-writer to write frontend-facing docs for this Controller."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java Service"
+  short_description: "Service layer standards for interfaces, implementations, and transactions."
+  default_prompt: "Use $java-service to generate the Service and ServiceImpl for this feature."
+policy:
+  allow_implicit_invocation: true

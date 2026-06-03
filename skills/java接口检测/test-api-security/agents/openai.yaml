@@ -1,0 +1,6 @@
+interface:
+  display_name: "API Security Test"
+  short_description: "API security tests for permissions, auth, injection, and exposure risks."
+  default_prompt: "Use $test-api-security to validate this API security fix."
+policy:
+  allow_implicit_invocation: true

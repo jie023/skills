@@ -1,0 +1,6 @@
+interface:
+  display_name: "Jie023 Test Quality Engineer"
+  short_description: "Coordinates code-level quality testing and report aggregation."
+  default_prompt: "Use $jie023-test-quality-engineer to run code quality testing for this completed module."
+policy:
+  allow_implicit_invocation: true

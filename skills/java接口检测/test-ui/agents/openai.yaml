@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI Test"
+  short_description: "UI layout, style, responsiveness, and interaction testing."
+  default_prompt: "Use $test-ui to test this page layout and interactions."
+policy:
+  allow_implicit_invocation: true

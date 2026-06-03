@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Common Input Validation"
+  short_description: "Input validation quality review checklist."
+  default_prompt: "Use $test-quality-common-input-validation to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

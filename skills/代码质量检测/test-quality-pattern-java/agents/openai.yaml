@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Pattern Java"
+  short_description: "Java architecture and CRUD pattern review."
+  default_prompt: "Use $test-quality-pattern-java to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

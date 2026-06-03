@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Report Template"
+  short_description: "Markdown report template for code quality testing."
+  default_prompt: "Use $test-quality-report-template to format this code quality report."
+policy:
+  allow_implicit_invocation: true

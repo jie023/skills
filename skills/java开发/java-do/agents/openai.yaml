@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java DO"
+  short_description: "Data Object generation and database-to-Java type mapping."
+  default_prompt: "Use $java-do to generate a DO class from this SQL table."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Pattern Compose Multiplatform"
+  short_description: "Compose Multiplatform pattern review."
+  default_prompt: "Use $test-quality-pattern-compose-multiplatform to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

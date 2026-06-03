@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Build Go Review"
+  short_description: "Go build quality diagnosis."
+  default_prompt: "Use $test-quality-build-go-review to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

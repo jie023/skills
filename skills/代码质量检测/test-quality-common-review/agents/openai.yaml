@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Common Review"
+  short_description: "General code quality review checklist."
+  default_prompt: "Use $test-quality-common-review to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

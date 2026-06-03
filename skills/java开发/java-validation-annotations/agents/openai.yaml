@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java Validation Annotations"
+  short_description: "JSR-380 validation annotation rules for Java fields and VOs."
+  default_prompt: "Use $java-validation-annotations to add validation annotations to this VO."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Quality Pattern Database Migrations"
+  short_description: "Database migration quality review."
+  default_prompt: "Use $test-quality-pattern-database-migrations to review this code quality scope."
+policy:
+  allow_implicit_invocation: true

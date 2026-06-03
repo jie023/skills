@@ -1,0 +1,6 @@
+interface:
+  display_name: "P3C OOP Standards"
+  short_description: "OOP rules for Java classes, equality, serialization, and access control."
+  default_prompt: "Use $p3c-oop-standards to review this Java class design."
+policy:
+  allow_implicit_invocation: true

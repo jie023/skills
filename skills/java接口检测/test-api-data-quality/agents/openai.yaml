@@ -1,0 +1,6 @@
+interface:
+  display_name: "API Data Quality Test"
+  short_description: "API tests for data consistency, integrity, and quality."
+  default_prompt: "Use $test-api-data-quality to verify data consistency for this API."
+policy:
+  allow_implicit_invocation: true

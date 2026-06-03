@@ -1,0 +1,6 @@
+interface:
+  display_name: "Java VO"
+  short_description: "VO class generation, naming, field, and annotation standards."
+  default_prompt: "Use $java-vo to generate VO classes for this API."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Jie023 Test API Engineer"
+  short_description: "API-first testing guidance for security, quality, function, performance, and data."
+  default_prompt: "Use $jie023-test-api-engineer to test this completed module, starting with API security when relevant."
+policy:
+  allow_implicit_invocation: true

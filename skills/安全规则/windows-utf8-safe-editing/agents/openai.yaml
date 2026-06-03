@@ -1,0 +1,6 @@
+interface:
+  display_name: "Windows UTF-8 Safe Editing"
+  short_description: "Safe UTF-8 handling for Chinese files, Windows paths, and garbled text."
+  default_prompt: "Use $windows-utf8-safe-editing to safely read, edit, or create this Chinese UTF-8 file on Windows."
+policy:
+  allow_implicit_invocation: true

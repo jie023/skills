@@ -1,0 +1,6 @@
+interface:
+  display_name: "P3C MySQL Database"
+  short_description: "P3C MySQL schema, SQL, indexing, and ORM mapping rules."
+  default_prompt: "Use $p3c-mysql-database to review this MySQL schema and SQL design."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Safe Bulk Editing"
+  short_description: "Controlled multi-file editing that protects UTF-8, Chinese text, and formatting."
+  default_prompt: "Use $safe-bulk-editing to modify these files without corrupting Chinese text, encoding, or formatting."
+policy:
+  allow_implicit_invocation: true

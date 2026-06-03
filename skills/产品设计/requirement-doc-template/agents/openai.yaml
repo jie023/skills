@@ -1,0 +1,6 @@
+interface:
+  display_name: "Requirement Doc Template"
+  short_description: "PRD template for requirements, processes, data, interfaces, and acceptance."
+  default_prompt: "Use $requirement-doc-template to draft a PRD for this feature."
+policy:
+  allow_implicit_invocation: true

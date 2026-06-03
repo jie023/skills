@@ -1,0 +1,6 @@
+interface:
+  display_name: "P3C Unit Testing"
+  short_description: "Unit testing rules based on AIR principles and P3C expectations."
+  default_prompt: "Use $p3c-unit-testing to design unit tests for this Java service."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Jie023 Product Designer"
+  short_description: "PRD, feature design, user flow, and product specification guidance."
+  default_prompt: "Use $jie023-product-designer to turn this idea into a product specification."
+policy:
+  allow_implicit_invocation: true

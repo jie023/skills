@@ -1,0 +1,6 @@
+interface:
+  display_name: "Function Test"
+  short_description: "Functional testing for business logic and requirement compliance."
+  default_prompt: "Use $test-function to test this feature against its requirements."
+policy:
+  allow_implicit_invocation: true

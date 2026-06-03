@@ -1,0 +1,6 @@
+interface:
+  display_name: "Secure Code Checklist"
+  short_description: "Security checks for input, SQL, commands, sensitive data, logs, XSS, and permissions."
+  default_prompt: "Use $secure-code-checklist to review this code for security risks."
+policy:
+  allow_implicit_invocation: true
